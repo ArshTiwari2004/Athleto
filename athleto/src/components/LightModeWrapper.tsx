@@ -8,7 +8,7 @@ export default function LightModeWrapper({
 }) {
   return (
     <ThemeProvider attribute="class" defaultTheme="light" forcedTheme="light">
-      {children}
+      <div className="light">{children}</div>
     </ThemeProvider>
   );
 }

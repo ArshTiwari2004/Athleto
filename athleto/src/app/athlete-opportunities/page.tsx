@@ -1,5 +1,5 @@
 import { Input } from "@/components/ui/input";
-import { CampaignCard } from "./__components/CampaignCard";
+import { CampaignCard } from "../../components/CampaignCard";
 import { FilterSidebar } from "./__components/Filtersidebar";
 import { Search } from "lucide-react";
 import AthleteNavbar from "@/components/AthleteNavbar";
@@ -30,6 +30,7 @@ export default function Page() {
                   logo: "/placeholder.svg",
                   description: "",
                 }}
+                status = {null}
                 dateRange=""
                 timeRange=""
               />
@@ -44,13 +45,13 @@ export default function Page() {
                   logo: "/placeholder.svg",
                   description: "",
                 }}
+                status = {null}
                 dateRange=""
                 timeRange=""
               />
 
               {/*Array will be mapped to show all the opporunities card wih props as:
               title, amount, location, dueDate, postedDate, company :{name,logo,description}, dateRange, timeRange*/}
-
             </div>
           </div>
         </div>
