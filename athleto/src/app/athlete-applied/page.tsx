@@ -6,7 +6,6 @@ import Link from "next/link";
 import type React from "react";
 import AthleteNavbar from "@/components/AthleteNavbar";
 import { CampaignCard } from "../../components/CampaignCard";
-import LightModeWrapper from "@/components/LightModeWrapper";
 
 // Sample data for demonstration
 const appliedCampaigns = [
@@ -110,7 +109,7 @@ export default function AppliedPage() {
   );
 
   return (
-    <LightModeWrapper>
+    <>
       <AthleteNavbar />
       <div className="container mx-auto p-6">
         <Tabs defaultValue="open" className="w-full">
@@ -169,6 +168,6 @@ export default function AppliedPage() {
           </TabsContent>
         </Tabs>
       </div>
-    </LightModeWrapper>
+    </>
   );
 }

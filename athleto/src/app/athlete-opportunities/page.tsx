@@ -3,11 +3,10 @@ import { CampaignCard } from "../../components/CampaignCard";
 import { FilterSidebar } from "./__components/Filtersidebar";
 import { Search } from "lucide-react";
 import AthleteNavbar from "@/components/AthleteNavbar";
-import LightModeWrapper from "../../components/LightModeWrapper";
 
 export default function Page() {
   return (
-    <LightModeWrapper>
+    <>
       <div className="bg-gray-50">
         <AthleteNavbar />
         <div className="container mx-auto flex gap-6 p-6">
@@ -56,6 +55,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </LightModeWrapper>
+    </>
   );
 }
