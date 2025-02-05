@@ -21,6 +21,11 @@ export default function Home() {
     router.push("/athlete-dashboard");
   };
 
+  const handleBrandSignup = () => {
+    setIsSignupModalOpen(false);
+    router.push("/brand-dashboard");
+  };
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Sparkles Background */}
@@ -101,6 +106,7 @@ export default function Home() {
   <BrandSignupModal
     isOpen={isBrandSignupModalOpen}
     onClose={() => setIsBrandSignupModalOpen(false)}
+    onSubmit={handleBrandSignup}
   />
 
           </div>

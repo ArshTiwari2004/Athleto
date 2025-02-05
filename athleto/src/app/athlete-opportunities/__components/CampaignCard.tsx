@@ -21,6 +21,7 @@ interface CampaignCardProps {
   timeRange: string
 }
 
+
 export function CampaignCard({
   title,
   amount,
@@ -34,7 +35,7 @@ export function CampaignCard({
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   return (
-    <>
+    <div className=" bg-gray-50 "  >
       <Card className="hover:bg-muted/50 cursor-pointer" onClick={() => setIsDialogOpen(true)}>
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="text-xl font-semibold">{title}</CardTitle>
@@ -83,7 +84,7 @@ export function CampaignCard({
           company,
         }}
       />
-    </>
+    </div>
   )
 }
 

@@ -5,10 +5,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import LoginModal from './Loginmodal';
+import { useRouter } from 'next/navigation';
 
 interface BrandSignupModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onSubmit: () => void; 
 }
 
 const BrandSignupModal = ({ isOpen, onClose }: BrandSignupModalProps) => {
@@ -25,6 +27,15 @@ const BrandSignupModal = ({ isOpen, onClose }: BrandSignupModalProps) => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isBrandSignupOpen, setIsBrandSignupOpen] = useState(false);
   const [isAthleteSignupOpen, setIsAthleteSignupOpen] = useState(false);
+    const router = useRouter();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Perform signup logic here
+    // ...
+    // Redirect to the Athlete Dashboard after successful signup
+    router.push('/brand-dashboard');
+  };
     
 
   return (
@@ -154,6 +165,7 @@ const BrandSignupModal = ({ isOpen, onClose }: BrandSignupModalProps) => {
   onOpenBrandSignup={() => setIsBrandSignupOpen(true)}
   onOpenAthleteSignup={() => setIsAthleteSignupOpen(true)}
 />
+<form onSubmit={handleSubmit}>
 
 
           <Button 
@@ -162,6 +174,7 @@ const BrandSignupModal = ({ isOpen, onClose }: BrandSignupModalProps) => {
           >
             Create Brand Account
           </Button>
+        </form>
         </div>
       </DialogContent>
     </Dialog>
