@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 import { useForceLightMode } from "@/hooks/useForcedLightTheme";
 import AthleteNavbar from "@/components/AthleteNavbar";
 import FundingPreview from "../../components/FundingPreview";
+import Chatbot from "@/components/Chatbot";
 
 // Enhanced sample data
 const SAMPLE_SCHOLARSHIPS = [
@@ -526,6 +527,7 @@ export default function AthleteFunding() {
           </TabsContent>
           </Tabs>
         </div>
+        <Chatbot/>
       </div>
     </>
   );

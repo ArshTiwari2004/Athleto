@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BrandLeaderboardPage from "../brand-leaderboard/page";
 import LeaderboardPage from "../athlete-leaderboard/page";
 import AthleteNavbar from "@/components/AthleteNavbar";
+import Chatbot from "@/components/Chatbot";
 export default function TabbedLeaderboard() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function TabbedLeaderboard() {
           <BrandLeaderboardPage />
         </TabsContent>
       </Tabs>
+      <Chatbot/>
     </div>
     </>
   );

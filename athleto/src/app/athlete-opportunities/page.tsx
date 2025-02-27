@@ -9,6 +9,7 @@ import { useForceLightMode } from "@/hooks/useForcedLightTheme";
 import { OpportunityCard } from "@/components/OpportunityCard";
 import { useOpportunity } from "@/context/OpportunityContext";
 import { useUser } from "@/context/UserContext";
+import Chatbot from "@/components/Chatbot";
 
 export default function OpportunitiesPage() {
   useForceLightMode();
@@ -89,6 +90,7 @@ export default function OpportunitiesPage() {
           </div>
         </div>
       </div>
+      <Chatbot/>
     </div>
   );
 }

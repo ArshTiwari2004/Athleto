@@ -9,6 +9,7 @@ import { AlertTriangle, X } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { DialogContent } from '@/components/ui/dialog';
 import CreateOpportunityModal from '@/components/OpportunityModal';
+import Chatbot from '@/components/Chatbot';
 
 
 
@@ -171,6 +172,7 @@ const BrandDashboard = () => {
   onClose={() => setShowCreateModal(false)}
 />
       </main>
+      <Chatbot/>
     </div>
   );
 };

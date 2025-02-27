@@ -5,6 +5,7 @@ import { Button } from "../components/ui/button"
 import { Badge } from "../components/ui/badge"
 import { Card, CardContent } from "../components/ui/card"
 import AthleteNavbar from "./AthleteNavbar"
+import Chatbot from "./Chatbot"
 
 const ANewsFeed = ({ brandDetails }: { brandDetails: any }) => {
   const [activeTab, setActiveTab] = useState("all")
@@ -361,6 +362,7 @@ const [posts, setPosts] = useState([
           </Card>
         </div>
       </div>
+      <Chatbot/>
     </div>
   )
 }

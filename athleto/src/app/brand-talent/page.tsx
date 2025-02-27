@@ -5,6 +5,7 @@ import TalentFilters from '@/components/talent/TalentFilters';
 import TalentSearch from '@/components/talent/TalentSearch';
 import TalentGrid from '@/components/talent/TalentGrid';
 import BrandNavbar from '@/components/BrandNavbar';
+import Chatbot from '@/components/Chatbot';
 
 export default function TalentPage() {
   const [filters, setFilters] = useState({
@@ -55,6 +56,7 @@ export default function TalentPage() {
           />
         </div>
       </div>
+      <Chatbot/>
     </div>
   );
 }

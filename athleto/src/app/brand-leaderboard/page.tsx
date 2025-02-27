@@ -18,6 +18,7 @@ import { Search, ChevronLeft, ChevronRight } from "lucide-react";
 import { useForceLightMode } from "@/hooks/useForcedLightTheme";
 import BrandNavbar from "@/components/BrandNavbar";
 import { MultipliersInfo } from "./__components/MultiplierInfo";
+import Chatbot from "@/components/Chatbot";
 interface Brand {
   id: number;
   name: string;
@@ -260,6 +261,7 @@ export default function BrandLeaderboardPage() {
             </CardContent>
           </Card>
         </div>
+        <Chatbot/>
       </div>
     </>
   );

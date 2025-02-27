@@ -52,6 +52,7 @@ interface Post {
   byAPI?: boolean;
   verified?: boolean;
 }
+import Chatbot from "./Chatbot"
 
 const NewsFeed = ({ brandDetails }: { brandDetails: any }) => {
   const { user, brand } = useUser();
@@ -911,6 +912,7 @@ const NewsFeed = ({ brandDetails }: { brandDetails: any }) => {
           </DialogContent>
         </Dialog>
       </div>
+      <Chatbot/>
     </div>
   );
 };

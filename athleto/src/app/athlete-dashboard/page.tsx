@@ -17,6 +17,7 @@ import {
 import { useForceLightMode } from '@/hooks/useForcedLightTheme'
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { useRouter } from 'next/navigation'
+import Chatbot from '@/components/Chatbot'
 
 interface Brand {
   id: string
@@ -779,6 +780,7 @@ export default function AthleteDashboard() {
           )}
         </DialogContent>
       </Dialog>
+      <Chatbot/>
     </div>
   )
 }
